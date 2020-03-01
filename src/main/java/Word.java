@@ -53,9 +53,9 @@ public class Word {
     }
 
 //Wywyolanie klasy w main
-//    public static void main(String[] args) {
-//        Word s = new Word(10);
-//        System.out.println(s.getFile("src/main/resources/slowa.txt"));
-//    }
+    public static void main(String[] args) {
+        Word s = new Word(10);
+        System.out.println(s.getFile("src/main/resources/slowa.txt"));
+    }
 
 }
