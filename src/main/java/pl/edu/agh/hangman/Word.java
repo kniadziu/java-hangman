@@ -1,3 +1,5 @@
+package pl.edu.agh.hangman;
+
 import java.io.*;
 import java.sql.SQLOutput;
 import java.util.ArrayList;
@@ -11,8 +13,6 @@ public class Word {
         this.maxLength = maxLength;
     }
 
-    public Word() {
-    }
 
     public String getFile(String txtFile) {
 
@@ -49,13 +49,10 @@ public class Word {
 
         int randomIndex = (int) (Math.random() * wordTable.size());
         // System.out.println( "Random word: " +  wordTable.get( randomIndex ) );
-        return wordTable.get(randomIndex);
+        return wordTable.get(randomIndex).toLowerCase();
     }
 
-//Wywyolanie klasy w main
-    public static void main(String[] args) {
-        Word s = new Word(10);
-        System.out.println(s.getFile("src/main/resources/slowa.txt"));
-    }
+
+
 
 }
