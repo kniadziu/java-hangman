@@ -146,7 +146,7 @@ public class Hangman {
             System.out.println("     ");
             showHangmanpics(countTry);
             System.out.println("                         Wybierz opcję: (1) - podaj literę, (2) - zgaduj haslo, (6) - wyjdz");
-            System.out.print("----------------------------------------------------------------------------------------------------------------------------------------");
+            System.out.print("----------------------------------------------------------------------------------------------------------------------------------------\n");
 
             int optionNumber=0;
 
